@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Data Breach Search Engine</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900">
+	<div class="min-h-screen flex items-center justify-center">
+		<div class="bg-gray-800 text-gray-200 shadow-md rounded-lg p-8 max-w-md w-full">
+			<h1 class="text-3xl text-orange-500 mb-4">Data Breach Search Engine</h1>
+			<form method="POST" action="{{ url_for('search') }}" class="mb-6">
+				<label for="search_term" class="block mb-2">Search:</label>
+				<input type="text" id="search_term" name="search_term" required class="border rounded-lg py-2 px-4 w-full mb-3 bg-gray-700 text-gray-200 placeholder-gray-400">
+				<button type="submit" class="bg-orange-500 text-white py-2 px-6 rounded-lg hover:bg-orange-600 transition-colors duration-300">Search</button>
+			</form>
+			{% if results %}
+			<h2 class="text-lg font-semibold mb-2">Results:</h2>
+			<ul class="list-disc pl-6">
+				{% for result in results %}
+				<li class="text-gray-300">{{ result }}</li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</div>
+	</div>
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

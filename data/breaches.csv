@@ -1,0 +1,4 @@
+Name,Year,Records Lost,Organization,Method of Leak,Sensitive Info
+Yahoo,2013,3000000000,Yahoo,Hack,Email addresses, passwords, dates of birth, security questions
+Canva,2017,143000000,Equifax,Data leak,Names, Social Security numbers, birth dates, addresses, driver's license numbers
+Target,2013,110000000,Target,Hack,Credit/debit card numbers, names, addresses, phone numbers, email addresses

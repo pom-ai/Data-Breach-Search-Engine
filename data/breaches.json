@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "Adobe",
+        "Year": "2013",
+        "Records": "153 million",
+        "Description": "Nus d'Apo divulgués."
+    },
+    {
+        "Name": "Canva",
+        "Year": "2019",
+        "Records": "137 million",
+        "Description": "In May 2019, graphic design tool website Canva suffered a data breach that impacted 137 million subscribers. The exposed data included email addresses, usernames, names, cities of residence and passwords stored as bcrypt hashes for users not using social logins."
+    },
+    {
+        "Name": "eBay",
+        "Year": "2014",
+        "Records": "145 million",
+        "Description": "In May 2014, eBay was hacked and the data of 145 million users was exposed. The data included names, addresses, phone numbers, dates of birth, and encrypted passwords."
+    }
+]
